@@ -71,6 +71,10 @@ body{
 }
 .chat__messages{
     flex-grow: 1;
+    padding: 30px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 .chat__form{
     background-color: #191919;
@@ -101,4 +105,32 @@ body{
 }
 .chat__button > span{
     font-size: 1.8rem;
+}
+.chat__messages > div{
+    padding: 10px;
+    width: 100%;
+    max-width: 220px;
+    font-size: 0.9;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height:22px;
+
+}
+.message--self{
+    color: #121212;
+    border-radius: 10px 10px 0px 10px;
+    background-color: #f2f2f2;
+    align-self: flex-end;
+}
+.message--other{
+    color: #f2f2f2;
+    border-radius: 10px 10px 10px 0px;
+    background-color: #121212;
+    align-self: flex-start;
+}
+.messager--sender{
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: chartreuse;
 }
